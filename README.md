@@ -9,4 +9,4 @@ R CMD INSTALL fitgen_1.1.5.tar.gz
 
 or similarly from RStudio.
 
-This package is provided under the GNU 3.0 license.
+This package is provided under the GNU GPL-3.0 license.
