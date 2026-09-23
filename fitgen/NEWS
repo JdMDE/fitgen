@@ -1,0 +1,36 @@
+Package: fitgen
+----------------
+Version 1.0.2:
+* Added calculation of Wedderburn, Farrington and Fletcher estimators for overdispersion
+* Modified estimation of common Phi in GroupedCommonBlissOwen with a different estimated value for each case
+
+Version 1.0.4:
+* Change of names of several function and inclusion of both models under general function FitGLM
+
+Version 1.0.5:
+* Preparation to include the R function SelectiveFit as part of the package
+* Modification of the return parameters of GroupedCommonBlissOwen from list to list of lists
+
+Version 1.0.6:
+* R function SelectiveFit added to the R-source part of the package
+* Allowed model names are now Poisson and NB2
+
+Version 1.0.7
+* Added access to overdispersion estimation methods implemented in EdgeR
+
+Version 1.0.8
+* Added function modelFit in file R/inference.R
+
+Version 1.0.9
+* Added logistic regression as a possible model. Change in the names of the models.
+* Added a second parameter to the FitGenSetDebug to ask to debugging at a lower level (numerical algorithms)
+* Function FitGLM does not exist anymore. It has been divided in two cases: FitGLMInd and FitGLMWithNei
+for fitting of a model with or without neighbours.
+
+Version 1.1.1
+* Corrected to make the package pass the CRAN tests
+* Modified to return NULL when the extended model cannot be fitted not even with one neighbour.
+
+Version 1.1.2
+* Added parameters to GroupedCommonBlissOwen to limit (by trimming) the rows considered around each one to estimate Phi.
+
